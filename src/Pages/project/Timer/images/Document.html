@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+    
+    const retire = ()=>{
+
+      let name =prompt("Enter your name");
+
+      let birthyear = parseFloat(prompt("Enter your birth year"));
+      console.log(birthyear);
+
+      const currDate = new Date()
+      console.log(currDate)
+
+      const curryear = currDate.getFullYear()
+      console.log(curryear)
+
+      const differ = curryear - birthyear ;
+      console.log(differ);
+
+      const retier_age = differ - 60;
+      console.log(retier_age)
+
+
+
+    }
+    retire()
+    
+
+    </script>
+</body></html>

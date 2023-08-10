@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcoor: rgb(237, 207, 207);
+}
+
+
+body{
+    min-height: 100vh;
+    line-height: 26px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #777777;
+    background: url(../src/img/body-bg.png.webp) no-repeat center ;
+    background-color: var(--bgcoor)!important;
+    
+}
+.img{
+  /* min-height: 100vh!important;
+  background: url(../src/img/body-bg.png.webp) no-repeat center; */
+}
+

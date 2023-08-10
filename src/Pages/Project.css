@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.pro_sec1_h1 {
+  font-size: 100px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(90deg, #854fee, #00ff95 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
