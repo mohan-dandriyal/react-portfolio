@@ -449,7 +449,7 @@ const Home = () => {
                     <div className="card-body card-img p-0">
                       <img className="ser-img" src={service1}/>
                          <div className="txt">
-                           <h2>Heading <hr/></h2>
+                           <h2>Web Design <hr/></h2>
                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
                             elit. Nostrum dolore labore est incidunt officiis harum,
                              placeat, a officia expedita sunt nam delectus cumque at
@@ -463,7 +463,11 @@ const Home = () => {
                     <div className="card-body card-img p-0">
                     <img className="ser-img" src={service2}/>
                        <div className="txt">
-                           
+                       <h2>Graphic design <hr/></h2>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                            elit. Nostrum dolore labore est incidunt officiis harum,
+                             placeat, a officia expedita sunt nam delectus cumque at
+                              doloribus provident nulla minima sint consectetur? </p>
                        </div>
                      </div>
                  </div>
@@ -473,7 +477,11 @@ const Home = () => {
                     <div className="card-body card-img p-0">
                     <img className="ser-img" src={service3}/>
                        <div className="txt">
-                           
+                       <h2>UI/UX Design <hr/></h2>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
+                            elit. Nostrum dolore labore est incidunt officiis harum,
+                             placeat, a officia expedita sunt nam delectus cumque at
+                              doloribus provident nulla minima sint consectetur? </p>
                        </div>
                      </div>
                  </div>
