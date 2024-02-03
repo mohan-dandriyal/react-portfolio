@@ -1,0 +1,83 @@
+
+
+
+
+/* media quary sec4 */
+
+@media screen and (max-width: 1350px) {
+    .container {
+        max-width: 1350px !important;
+    }
+}
+
+@media screen and (max-width: 1297px) {
+    .s1_end {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1207px) {
+    .s1_end {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        margin-top: 30px !important;
+    }
+    .s1_img1 {
+        width: 70%;
+        margin-top: 70px;
+    }
+    .s1_cont {
+        font-size: 33px;
+    }
+    .s1_end {
+        font-size: 35px;
+    }
+
+    .my_iamge {
+        width: 63% !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+  
+    .s1_img1 {
+        width: 50%;
+        margin-top:70px;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 1199px){
+    .s4_img5{ 
+        bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container {
+        max-width: 1350px !important;
+    }
+    .s4_img5{ 
+        bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .s4_img5{ 
+        bottom: 66px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .s4_img5{ 
+        bottom: 0px;
+    }
+}
+
+/* media quary sec4 */
