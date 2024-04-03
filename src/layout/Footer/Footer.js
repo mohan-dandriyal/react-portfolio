@@ -94,10 +94,10 @@ const Footer = () => {
                       <a href="#!" className="text-reset text-decoration-none ">Website Design</a>
                     </p>
                     <p className='text-light'>
-                      <a href="#!" className="text-reset text-decoration-none ">Responsive & update design</a>
+                      <a href="#!" className="text-reset text-decoration-none ">Graphic Design</a>
                     </p>
                     <p className='text-light'>
-                      <a href="#!" className="text-reset text-decoration-none ">Backend work</a>
+                      <a href="#!" className="text-reset text-decoration-none ">Content Marketing</a>
                     </p>
                   </div>
                   {/* <!-- Grid column --> */}

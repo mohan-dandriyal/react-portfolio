@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import sec1img1 from "../img/home-right.png.webp";
 import sec2_img1 from "../img/h2_about_img.png";
 import "../Pages/Home.css";
 import "../Responsive/Responsive.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 import aboutme_img1 from "../img/aboutme_img2.webp";
@@ -32,7 +34,7 @@ import alx_web from "../img/project/alx-web.png";
 import bit_web from "../img/project/bit-web.png";
 import win9_web from "../img/project/win-web.png";
 
-import pdf from "../Asset/Resume_designer.pdf";
+import pdf from "../Asset/Resume.pdf";
 import { Typewriter } from "react-simple-typewriter";
 import "swiper/css";
 import { Link } from "react-router-dom";
@@ -44,7 +46,14 @@ const Home = () => {
     setHire(true);
   };
 
-
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
 
 
   return (
@@ -169,12 +178,13 @@ const Home = () => {
         <div className="container">
           {/* sec1 start */}
           <section
+           
             id="home"
             className="d-flex align-items-center"
             style={{ minHeight: "100vh" }}
           >
             <div className="row mx-auto flex-wrap-reverse  p-3 banner row-gap-5 w-100">
-              <div className="col-md-7  d-flex justify-content-start align-items-center">
+              <div className="col-md-7  d-flex justify-content-start align-items-center" data-aos="fade-right">
                 <div className="sec1cont col-md-12 ">
                   <h1 className="s1_cont">
                     <span>👋</span>Hey, I am Prince
@@ -227,7 +237,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-5 ">
+              <div className="col-md-5" data-aos="fade-left">
                 <div className="sec1_img1 ">
                   <img className="s1_img1" src={sec1img1} alt="" />
                 </div>
@@ -239,11 +249,11 @@ const Home = () => {
           {/* sec2 start*/}
           <section className="sec2" id="about">
             <div className="row  align-items-center flex-wrap-reverse row-gap-5">
-              <div className="sec2_img text-center col-md-6 col-md-6">
+              <div className="sec2_img text-center col-md-6" >
                 <img className=" my_iamge" src={sec2_img1} alt="" />
               </div>
 
-              <div className="sec2_cont col-md-6 col-md-6">
+              <div className="sec2_cont col-md-6" >
                 <div>
                   <h2 className="sec2_heading same_heading">About Me</h2>
                 </div>
@@ -448,12 +458,26 @@ const Home = () => {
                  <div className="card ser-card">
                     <div className="card-body card-img p-0">
                       <img className="ser-img" src={service1}/>
-                         <div className="txt">
-                           <h2>Web Design <hr/></h2>
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
-                            elit. Nostrum dolore labore est incidunt officiis harum,
-                             placeat, a officia expedita sunt nam delectus cumque at
-                              doloribus provident nulla minima sint consectetur? </p>
+                         <div className="busy_txt">
+                           <h2 class="busy_head">Web Design <hr/></h2>
+                           <div class="row">
+                             <div class="col-6 ">
+                                <p class="busy_para">Our Team offers creative and responsive solutions tailored to your brand. 
+                                We specialize in crafting visually engaging websites that adapt seamlessly to any device.
+                                  </p>
+                             </div>
+                             <div class="col-6">
+                             <img className="busy-box-img" src={service1}/>
+                             </div>
+                             <div class="col-12">
+                                 <p class="busy-btm_para"> From corporate websites to e-commerce platforms, 
+                                 our team ensures seamless navigation, mobile responsiveness, and impactful 
+                                 design elements to enhance your online presence and drive success."
+                                  </p>
+                             </div>
+                         
+                           </div>
+                           
                          </div>
                      </div>
                  </div>
@@ -462,12 +486,27 @@ const Home = () => {
                  <div className="card ser-card">
                     <div className="card-body card-img p-0">
                     <img className="ser-img" src={service2}/>
-                       <div className="txt">
-                       <h2>Graphic design <hr/></h2>
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
-                            elit. Nostrum dolore labore est incidunt officiis harum,
-                             placeat, a officia expedita sunt nam delectus cumque at
-                              doloribus provident nulla minima sint consectetur? </p>
+                       <div className="busy_txt">
+                       <h2 class="busy_head">Graphic Design <hr/></h2>
+                       <div class="row">
+                             <div class="col-6">
+                                <p class="busy_para">Our Team offers innovative solutions 
+                                that captivate and engage your audience. We specialize in creating visually 
+                                striking designs that 
+                                  </p>
+                             </div>
+                             <div class="col-6">
+                             <img className="busy-box-img" src={service2}/>
+                             </div>
+                             <div class="col-12">
+                                 <p class="busy-btm_para">adapt seamlessly to any platform. We refresh designs 
+                                 to reflect evolving tastes and ensure they align with user preferences. From logos to 
+                                  branding materials, we tailor every element to reflect your unique identity
+                                  and make a lasting impression."
+                                  </p>
+                             </div>
+                         
+                           </div>
                        </div>
                      </div>
                  </div>
@@ -476,12 +515,28 @@ const Home = () => {
                  <div className="card ser-card">
                     <div className="card-body card-img p-0">
                     <img className="ser-img" src={service3}/>
-                       <div className="txt">
-                       <h2>UI/UX Design <hr/></h2>
-                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
-                            elit. Nostrum dolore labore est incidunt officiis harum,
-                             placeat, a officia expedita sunt nam delectus cumque at
-                              doloribus provident nulla minima sint consectetur? </p>
+                       <div className="busy_txt">
+                       <h2 class="busy_head">Content Marketing<hr/></h2>
+                       <div class="row">
+                             <div class="col-6">
+                                <p class="busy_para"> We take a distinct approach to SEO, grounded in 
+                                proven strategies. With an understanding of over 200 key factors in 
+                                
+                                  </p>
+                             </div>
+                             <div class="col-6">
+                             <img className="busy-box-img" src={service3}/>
+                             </div>
+                             <div class="col-12">
+                                 <p class="busy-btm_para">Google's search algorithm, we steer clear of 
+                                 outdated tactics and avoid relying on guesswork.
+                                  Instead, we implement strategies based on solid data 
+                                 and continuous adaptation, ensuring your website ranks 
+                                 effectively in search results.
+                                  </p>
+                             </div>
+                         
+                           </div>
                        </div>
                      </div>
                  </div>

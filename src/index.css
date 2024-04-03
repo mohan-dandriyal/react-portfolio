@@ -29,6 +29,7 @@ body{
        margin: 5px ;
        border:none;
        background: none !important;
+       transition: all 2s ease;
     }
       
 
@@ -37,9 +38,7 @@ body{
       /* border:1px solid #33f4cd !important; */
       border-radius: 10px;
       box-shadow: inset 0px 0px 0px 2px;
-  
-      /*  */
-      
+      transition: all 0.7s ease;
     }
 
     .navbar-toggler:focus {
@@ -48,7 +47,7 @@ body{
       box-shadow: 4px 2px 2px #fff !important;
   }
 
-  .navbar-toggler-icon {
+.navbar-toggler-icon {
     filter: invert(1);
 }
 

@@ -55,13 +55,12 @@ img{
     box-shadow: 0px 5px 10px #33f4cd;
     color: #33f4cd !important;
     border:1px solid #33f4cd !important;
-
+    transition: all 0.7s ease;
 }
 
 .sec2_heading{
     color: white;
     font-size: 60px !important;
-   
 }
 
 .s1_btn2{
@@ -70,7 +69,7 @@ img{
     padding: 10px 20px;
     color: #33f4cd !important;
     box-shadow: 0px 5px 10px #33f4cd;
-   
+    transition: all 0.7s ease;
     /* background-origin: border-box;
     background-clip: content-box, border-box; */
     /* border: double 2px transparent; */
@@ -83,8 +82,8 @@ img{
     border-radius: 7px;
     box-shadow: 0px 5px 10px #33f4cd;
     background-image: linear-gradient(45deg, #33f4cd, #006652 );
+    transition: all 0.7s ease;
     /* background-image: linear-gradient(45deg, #33f4cd, #006652 ); */
-    
 }
 
 
@@ -97,7 +96,6 @@ img{
     background: -webkit-linear-gradient(45deg, #854fee, #00ff95 80%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-      
 }
 
 .sec2_btn{
@@ -176,7 +174,7 @@ padding: 10px;
     border-radius: 7px;
     background-image: linear-gradient(45deg, #33f4cd, #006652 );
     color: #fff !important;
-  
+    transition: all 0.3s ease;
 }
 
 
@@ -185,6 +183,7 @@ padding: 10px;
     box-shadow: 0px 5px 10px #33f4cd;
     color: #33f4cd !important;
     border:1px solid #33f4cd !important;
+    transition: all 0.7s ease;
 }
 
 .res-p{
@@ -251,29 +250,50 @@ padding: 10px;
     width: 100%;
     height: 100%;
     position: relative;
-   
 }
 
-.txt{
+.busy_txt{
     width: 100%;
     height: 100%;
     background: none;
     position: absolute;
-    top:-408px;
+    /* top:-408px; */
+    top:0;
     left: 0px;
-    z-index: 9;
-    background: #2c2929cf;
+    /* z-index: 9; */
+    background: #2c2929f2;
     border-radius: 6px;
     transition: all 0.9s ease;
-   
 }
 
-.ser-card:hover .txt{
-  
+.busy_head{
+    color: #30f1cb;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+.busy_para{
+  text-align: justify;
+  padding-left: 9px;
+}
+
+.busy-btm_para{
+    text-align: justify;
+    padding: 0px 8px;
+}
+
+.busy-box-img{
+    width: 95%;
+    height: 95%;
+    border-radius: 6px 
+}
+
+/* .ser-card:hover .txt{
     position: absolute;
     top:0px;
-   
-}
+} */
 
 
 
